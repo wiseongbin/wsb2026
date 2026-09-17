@@ -72,6 +72,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "TankRotate",
+                    "id": "e9d678c1-a1c4-4965-a66e-17875683d41d",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "9a757f1c-9a02-4680-9e00-169e46587805",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "913171b1-9eef-434f-b7eb-f3590d1c9b54",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "fbc7df8a-7c54-448e-8a17-7c4911e8e4d7",
                     "path": "<Keyboard>/space",
@@ -83,7 +116,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "1D Axis",
+                    "name": "Key",
                     "id": "a86f9513-da06-4e97-a1c5-63eac275845d",
                     "path": "1DAxis",
                     "interactions": "",
@@ -108,6 +141,39 @@
                     "name": "positive",
                     "id": "0e19c961-6b87-4092-9827-368a81626752",
                     "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "TankMove",
+                    "id": "07783c88-c50f-45e7-bd9f-4f97b35ad9d1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b3fed68a-99e2-4345-84e7-ff305448e035",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "529cf8b1-5c42-4395-86c3-ad760da1bb4c",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

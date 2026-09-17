@@ -1273,7 +1273,7 @@ GameObject:
   - component: {fileID: 1342251166}
   - component: {fileID: 1342251171}
   - component: {fileID: 1342251173}
-  - component: {fileID: 1342251172}
+  - component: {fileID: 1342251174}
   m_Layer: 9
   m_Name: Tank
   m_TagString: Untagged
@@ -1403,20 +1403,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1342251172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342251165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51413ce068aee0448c30625e6d0b5ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TankMoveNewinput
-  moveSpeed: 2
-  rotateSpeed: 30
 --- !u!114 &1342251173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1434,19 +1420,69 @@ MonoBehaviour:
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1342251174}
+        m_TargetAssemblyTypeName: TankMoveEvnet, Assembly-CSharp
+        m_MethodName: OnTankMove
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1342251174}
+        m_TargetAssemblyTypeName: TankMoveEvnet, Assembly-CSharp
+        m_MethodName: OnTankRotate
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_DeviceRegainedEvent:
     m_PersistentCalls:
       m_Calls: []
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 093414f0-3f9e-48fc-8515-f5afeb259245
+    m_ActionName: 'FPS/Move[/Keyboard/downArrow,/Keyboard/upArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f2cdeeca-6e3e-4ea9-9764-dd9d7126b798
+    m_ActionName: 'FPS/Rotate[/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4216cfae-f60f-4b56-bf69-17b372807c9e
+    m_ActionName: 'FPS/Fire[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: FPS
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1342251174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342251165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0daf6014c0fc0c149a38f47826da696f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TankMoveEvent
+  moveSpeed: 100
+  rotateSpeed: 100
 --- !u!1 &1362989515
 GameObject:
   m_ObjectHideFlags: 0
