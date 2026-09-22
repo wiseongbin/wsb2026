@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.InputSystem; // 이 namespace가 필요합니다.
 
 public class TankMoveEvnet : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float rotateSpeed = 150f; // 회전 속도를 키웠습니다!
+    public float rotateSpeed = 150f;
     float move;
     float rotate;
     Rigidbody rb;
@@ -14,29 +14,27 @@ public class TankMoveEvnet : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.freezeRotation = true; // 물리 회전으로 인해 탱크가 쓰러지는 것 방지
+            rb.freezeRotation = true;
         }
     }
 
-    // 물리 이동은 Update 대신 FixedUpdate를 사용하는 것이 정석입니다.
     private void FixedUpdate()
     {
-        if (Mathf.Abs(move) > 0.1f || Mathf.Abs(rotate) > 0.1f)
-        {
-            Move();
-            Rotate();
-        }
+        // 값이 잘 들어오는지 디버그로 확인해보세요
+        Move();
+        Rotate();
     }
 
-    public void OnTankMove(float value)
+    // Input System에서 Send Messages나 Invoke Unity Events 방식을 쓸 때 사용
+    public void OnTankMove(InputValue value)
     {
-        move = value;
+        move = value.Get<float>();
         Debug.Log("move value : " + move);
     }
 
-    public void OnTankRotate(float value)
+    public void OnTankRotate(InputValue value)
     {
-        rotate = value;
+        rotate = value.Get<float>();
         Debug.Log("Rotate value : " + rotate);
     }
 
@@ -44,7 +42,6 @@ public class TankMoveEvnet : MonoBehaviour
     {
         if (rb == null) return;
 
-        // FixedUpdate에서는 Time.fixedDeltaTime을 사용하는 것이 좋습니다.
         Vector3 moveDir = transform.forward * move * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + moveDir);
     }

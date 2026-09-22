@@ -72,7 +72,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "TankRotate",
+                    "name": "OnTankRotate",
                     "id": "e9d678c1-a1c4-4965-a66e-17875683d41d",
                     "path": "1DAxis",
                     "interactions": "",
@@ -149,7 +149,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "TankMove",
+                    "name": "OnTankMove",
                     "id": "07783c88-c50f-45e7-bd9f-4f97b35ad9d1",
                     "path": "1DAxis",
                     "interactions": "",
