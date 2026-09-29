@@ -39,7 +39,7 @@
             ],
             "bindings": [
                 {
-                    "name": "1D Axis",
+                    "name": "Arrow",
                     "id": "618569d8-54d7-4738-9684-081043f85938",
                     "path": "1DAxis",
                     "interactions": "",
@@ -72,7 +72,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "OnTankRotate",
+                    "name": "Key",
                     "id": "e9d678c1-a1c4-4965-a66e-17875683d41d",
                     "path": "1DAxis",
                     "interactions": "",
@@ -116,7 +116,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Key",
+                    "name": "Arrow",
                     "id": "a86f9513-da06-4e97-a1c5-63eac275845d",
                     "path": "1DAxis",
                     "interactions": "",
@@ -149,7 +149,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "OnTankMove",
+                    "name": "Key",
                     "id": "07783c88-c50f-45e7-bd9f-4f97b35ad9d1",
                     "path": "1DAxis",
                     "interactions": "",
