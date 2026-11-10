@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/10.Scenes/04.Draw Sphere.unity
-    guid: af071559cad879d449edd53a3a670c8a
+    path: Assets/10.Scenes/05.Plane Test.unity
+    guid: e47e8a2f58d0d0b42892d555621edbd3
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 83d5105da6bf21846845c58ffd7a2d1a, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

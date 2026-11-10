@@ -14,6 +14,7 @@ public class sphere : MonoBehaviour
     void Update()
     {
         if(EventSystem.current.currentSelectedGameObject) return;
+
         var touchScreen = Touchscreen.current;
         if (touchScreen == null) return;
         if (!touchScreen.primaryTouch.press.wasPressedThisFrame) return;
@@ -25,5 +26,7 @@ public class sphere : MonoBehaviour
 
         GameObject go = Instantiate(spherePrefab, worldpos, Quaternion.identity);
         go.transform.parent = parentTransform;
+
+        GameManager.instance.ShowMessage("Sphere generated.");
     }
 }
